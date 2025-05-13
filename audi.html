@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Audi Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="taikaa.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="moduulii8.html" class="w3-bar-item w3-padding-large w3-hover-none w3-text-white">
+      <img src="logo.JPG" alt="Logo" style="height:30px;">
+    </a>
+    <a href="moduulii8.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="bmw.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BMW</a>
+    <a href="mercedes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mercedes</a>
+    <a href="audi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Audi</a>
+  </div>
+ </div>
+
+  <!-- Mobile view -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="moduulii8.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="bmw.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">BMW</a>
+    <a href="mercedes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Mercedes</a>
+    <a href="audi.html" class="w3-bar-item w3-button w3-padding-large w3-white">Audi</a>
+  </div>
+
+<!-- Spacer -->
+<div style="margin-top: 64px;"></div>
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><strong>AUDI</strong></h1>
+</header>
+
+<!-- Slideshow -->
+<div class="w3-display-container w3-black" style="width:100%; padding:16px;">
+<img class="mySlides" src="audi1.jpg" alt="audi1" style="width:100%; height:500px; object-fit:cover; display:block;">
+<img class="mySlides" src="audi2.jpg" alt="audi2" style="width:100%; height:600px; object-fit:cover;">
+<img class="mySlides" src="audi3.jpg" alt="audi3" style="width:100%; height:500px; object-fit:cover;">
+<img class="mySlides" src="audi4.jpg" alt="audi4" style="width:100%; height:600px; object-fit:cover;">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+<!-- Main content -->
+<div class="w3-row-padding w3-black w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h1>Top 4 Nicest looking Audi</h1>
+      <h5 class="w3-padding-32">Audi RS6 Avant C8 (2020)</h5>
+      <h5 class="w3-padding-32">Audi RS5 B9 (2020)</h5>
+      <h5 class="w3-padding-32">Audi SQ7 (2016–2019)</h5>
+      <h5 class="w3-padding-32">Audi R8 V10 Plus (2016–2019)</h5>
+    </div>
+    </div>
+    </div>
+
+<!-- About Audi -->
+<div class="w3-black w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+  <h2>About Audi</h2>
+ <p>Audi AG is a German automobile manufacturer that designs, engineers, produces, and distributes luxury vehicles. Founded in 1909 by August Horch and re-established as Audi in 1932, the company is headquartered in Ingolstadt, Bavaria. Audi is a member of the Volkswagen Group and is known for its advanced engineering, refined design, and premium driving experience.</p>
+    <p>Today, Audi continues to push boundaries in performance and sustainability through its high-performance RS models and expanding line of electric vehicles like the Audi e-tron. The brand’s slogan, “Vorsprung durch Technik” ("Advancement through Technology"), embodies its commitment to progress and innovation in every vehicle.</p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <p>Pictures from: <a href="https://unsplash.com/" target="_blank" rel="noopener">https://unsplash.com</a></p>
+</footer>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mercedes Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="taikaa.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="moduulii8.html" class="w3-bar-item w3-padding-large w3-hover-none w3-text-white">
+      <img src="logo.JPG" alt="Logo" style="height:30px;">
+    </a>
+    <a href="moduulii8.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="bmw.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BMW</a>
+    <a href="mercedes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Mercedes</a>
+    <a href="audi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Audi</a>
+  </div>
+</div>
+
+  <!-- Mobile view -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="moduulii8.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="bmw.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">BMW</a>
+    <a href="mercedes.html" class="w3-bar-item w3-button w3-padding-large w3-white">Mercedes</a>
+    <a href="audi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Audi</a>
+  </div>
+
+
+<!-- Spacer to fix overlap with w3-top -->
+<div style="margin-top: 64px;"></div>
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><strong>Mercedes</strong></h1>
+</header>
+
+<!-- Slideshow -->
+<div class="w3-display-container w3-black" style="width:100%; padding:16px;">
+<img class="mySlides" src="mersu1.jpg" style="width:100%; height:500px; object-fit:cover; display:block;" alt="Mercedes 1">
+<img class="mySlides" src="mersu2.jpg" style="width:100%; height:600px; object-fit:cover;" alt="Mercedes 2">
+<img class="mySlides" src="mersu3.jpg" style="width:100%; height:500px; object-fit:cover;" alt="Mercedes 3">
+<img class="mySlides" src="mersu4.jpg" style="width:100%; height:600px; object-fit:cover;" alt="Mercedes 4">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<!-- Slideshow script -->
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+<!-- Main content -->
+<div class="w3-row-padding w3-black w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h1>Top 4 Nicest looking Mercedes</h1>
+      <h5 class="w3-padding-32">Mercedes C63 AMG (2018–2020)</h5>
+      <h5 class="w3-padding-32">Mercedes E53 AMG (2020-2023)</h5>
+      <h5 class="w3-padding-32">Mercedes AMG GT (2015–2021)</h5>
+      <h5 class="w3-padding-32">Mercedes S500 (2020)</h5>
+    </div>
+    </div>
+    </div>
+
+    <!-- About Mercedes -->
+<div class="w3-black w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+    <h2>About Mercedes</h2>
+    <p>Mercedes-Benz, often simply referred to as Mercedes, is one of the most iconic and respected car manufacturers in the world. Founded in 1926, the company has its roots in the invention of the first gasoline-powered automobile by Karl Benz in 1886.</p>
+    <p>The brand is renowned for producing vehicles that combine elegance, luxury, and cutting-edge technology. From executive sedans to high-performance sports cars and innovative electric vehicles, Mercedes-Benz has consistently set standards in design, comfort, and safety.</p>
+    <p>Mercedes' S-Class has long been considered a benchmark for luxury vehicles, introducing pioneering features that later become standard across the automotive industry. Meanwhile, the AMG performance division caters to enthusiasts seeking speed and precision engineering.</p>
+</div>
+</div>
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <p>Pictures from: <a href="https://unsplash.com/" target="_blank" rel="noopener">https://unsplash.com</a></p>
+</footer>
+
+<!-- Mobile menu script -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

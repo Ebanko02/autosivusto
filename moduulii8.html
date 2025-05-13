@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Main page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="taikaa.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  </div>
+  <!-- Desktop view -->
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <!-- Mobile menu toggle -->
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+     <!-- LOGO ensin -->
+  <a href="moduulii8.html" class="w3-bar-item w3-padding-large w3-hover-none w3-text-white">
+    <img src="logo.JPG" alt="Logo" style="height:30px;">
+  </a>
+    <!-- Navigation links -->
+    <a href="moduulii8.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="bmw.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BMW</a>
+    <a href="mercedes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mercedes</a>
+    <a href="audi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Audi</a>
+  </div>
+
+  <!-- Mobile view -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="moduulii18.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+  <a href="bmw.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">BMW</a>
+  <a href="mercedes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Mercedes</a>
+  <a href="audi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Audi</a>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><strong>TOP 3 German Car brands</strong></h1>
+  <p class="w3-xlarge">Content made by Alan Vesanto</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-black w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h1>About content</h1>
+      <h5 class="w3-padding-32">Here I showcase some pictures the top 3 good looking German car brands and some specific car models.</h5>
+    </div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Code from: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
